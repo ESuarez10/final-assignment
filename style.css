@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    font-family: 'Ysabeau', sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  header{
+    background-color:#444;
+    padding:0.5em;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
+  }
+  
+  #logo{
+   color:white; 
+   text-decoration:none;
+   font-size:0.5rem;
+  }
+  .circle{
+    width:40px;
+    height:40px;
+    line-height:25px;
+    border-radius:50%;
+    color:#fff;
+    text-align:center;
+    border: 5px solid greenyellow;
+  }
+  #logo:hover{
+    color: red;
+  }
+  header a{
+    color:white;
+    text-decoration:none;
+  }
+  #menu{
+    display:flex;
+    gap:1rem;cursor: pointer;
+  }
+  #menu a:hover{
+    color:red;
+  }
+  #top-image{
+    max-width: 100%;
+    height: 900px;
+    background-size:cover;
+    object-fit: cover;
+  }
+  
+ .container{
+    position: relative;
+    text-align: left;
+    color:black;
+ }
+ .title{
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    font-size: 1.5rem;
+ }
+ .title h2{
+    font-size: 1.2rem;
+    margin-top: 10px;
+ }
+
+ .about-section img{
+  width: 100%;
+  max-width: 500px;
+}
+
+.about-section{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding-top: 10rem;
+max-width: 1000px;
+margin: 0 auto;
+align-items:center;
+}
+
+.about-section p{
+width: 100%;
+max-width: 350px;
+text-align: left;
+color:black;
+font-size: 1rem;
+font-family: 'Raleway', sans-serif; 
+margin-bottom: 2rem;
+}
+
+.about-section h2{
+text-align: left;
+font-size: 1.5rem;
+margin-bottom: 2rem;
+font-weight:bolder;
+font-family: 'Roboto', sans-serif;
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding-top: 10rem;
+  margin: 0 auto;
+  gap: 50px;
+  max-width:100%;
+  width:700px;
+}
+
+.row img{
+  max-width: 100%;
+  width: 300px;
+  margin-bottom: 4rem;
+}
+.row h2{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+}
+.row p{
+  max-width: 100%;
+}
+.box:hover{
+  box-shadow: 0px 0px 30px rgba(33,33,33,.2); 
+  -webkit-transform: (1.05, 1.05);
+  transform: scale(1.05,1.05);
+}
+.box:hover::after{
+  opacity: 1;
+}
+footer{
+  background-color: #444;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif; 
+  margin-top: 10rem;
+  max-width: 100%;
+}
+footer p{
+  font-size: .7rem;
+}
+footer .fa-instagram{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+footer .fa-twitter{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+footer .fa-linkedin{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.fa{
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+  @media (max-width: 40rem) {
+    #menu{
+      position:absolute;
+      background-color:white;
+      left:0;
+      top:100%;
+      right:0;
+      flex-direction:column;
+      gap:0;
+      padding: 10rem;
+      max-width: 100%;
+    }
+    
+    #menu a {
+      text-align:center;
+      padding:2rem;
+      color: black;
+    }
+    #menu a:hover{
+      background-color:#777;
+    }
+    #menu-toggle {
+      display:flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding:0.5rem;
+    }
+    #menu-toggle:hover{
+      filter:hue-rotate(180deg);
+    }
+    .patty{
+      background-color:#fdfdfd;
+      width:2rem;
+      height:0.125rem;
+    }
+    header{
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    #top-image{
+        width: 100%;
+    }
+    .title{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        font-size:1rem;
+     }
+     .title h2{
+        font-size: 1.2rem;
+        margin-top: 10px;
+     }
+     .row{
+      display: flex;
+      flex-wrap: wrap;
+     }
+     .about-section{
+      margin: 2rem;
+     }
+     .box{
+      width: 300px;
+     }
+  }
